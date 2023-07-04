@@ -57,10 +57,11 @@ if (firstNumer - secondNumber && firstNumer + secondNumber === 8) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const totalShoppingCart = 40;
+const shippingfee = 10;
 if (totalShoppingCart > 50) {
   console.log("Free Shipping!!!");
 } else {
-  console.log("Requirements are not met. Total ammount to pay:", totalShoppingCart + 10);
+  console.log("Requirements are not met. Total ammount to pay:", totalShoppingCart + shippingfee);
 }
 
 /* ESERCIZIO 6
@@ -73,7 +74,10 @@ let blackFridayTotalCart = (totalShoppingCart * 20) / 100;
 if (blackFridayTotalCart > 50) {
   console.log("Free Shipping!!!");
 } else {
-  console.log("Requirements are not met. Total ammount to pay:", totalShoppingCart - blackFridayTotalCart + 10);
+  console.log(
+    "Requirements are not met. Total ammount to pay:",
+    totalShoppingCart - blackFridayTotalCart + shippingfee
+  );
 }
 
 /* ESERCIZIO 7
